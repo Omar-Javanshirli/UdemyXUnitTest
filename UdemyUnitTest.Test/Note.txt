@@ -1,0 +1,27 @@
+﻿							Packages
+xUnit=>esas kitabxana unit testleri bu kitapxana sahesinde yazaciyix
+xunit.runner=>bizim testlerimizi calistirmaq ucun istifade edeceyimiz bir tool olacax
+Microsoft.Net.Test.Sdk=>yazmis oldugumuz codlari control elemey veya debug elemey ucun lazimdi
+coverlet=>cros platformasi ucun lazim olan bir kitabxadir
+
+
+							Note
+bir unit test yazmax 3 hisseden ibaret olur
+Arrange=>bizim variable'larimizi intialize etdiyimiz yerdi veya bir object yaradamax isiyiriyse arrange hissesinde yazirix
+Act=>bizim yuxarida intialize elediyimiz classlarimiza parametreler verib test edeceyimiz methodlarin calisdirdigimiz yerdir.
+Assert=>Dogrulama hissedir yani Act-dan gelen deger menim elde etmey isdediyim deyerdi ya yox bunu test etdiyim yerdi.
+[Fact] => her test edeceyimiz method ucun mutleq bu atribut yazilmalidir. hemcinin methodumuz parametre qebul etmemlidir
+Theory=>test edeceyimiz method parametre qebul etdiyimi zaman bu atributda istifade olunur;
+InnlineData=>bir atributdur.gonderdeiyimiz parametleri burda bildririy hemcinin almaq isdediyimiz neticeni burda bildiriry
+
+						Aseert Methodlari
+Contains=>ilk yazdigimiz parametir ikinci parametirin icinde olub olmadigini yoxluyur;
+DoesNotContain=>contanins-in eksini yoxluyur
+Matches=>regex deyer qebul edir eger qebul etdiyimiz deyer regexse uygundursa true olacax;
+DoesNotMatch=>esk hali;
+Single=>eger ki arrayin icinde birde cox element varsa false eks halda true qautaracax;
+IsAssignableFrom=> bir tipin bir tipe referance verib vermediyini yoxluyur
+
+						      Mock
+Mock - bizim programimiz icinde class ve ya interface-derin davranislarini taklit elemeye imkan yaradan objelerdir.
+biz test icerisinde ki kodalarin gercek dunyandaymis kimi isdemesini Mock-lar sahesinde heyata kecire bileriy.
